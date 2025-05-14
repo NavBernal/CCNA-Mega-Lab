@@ -11,6 +11,7 @@ This lab covers all configuration topics on the CCNA exam including, but not lim
 3. Configure the user account `cisco` with secret `ccna` on each router/switch. Use type 9 hashing if available; otherwise, use type 5.
 	![](attachments/d98d46c7e20c2ca7c50f7caa0819e084.png)
 4. Configure the console line to require login with a local user account. Set a 30-minute inactivity timeout. Enable synchronous logging.
+	
 	![](attachments/2cb176027ef21b6e2bba99724aae3dae.png)
 
 **Repeat these steps for all the other switches/routers**
