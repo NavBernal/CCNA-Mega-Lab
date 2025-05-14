@@ -203,25 +203,25 @@ This lab covers all configuration topics on the CCNA exam.
 2. Enable PortFast and BPDU Guard on all ports connected to end hosts (including WLC1). Perform the configurations in interface config mode.
 	![](attachments/f7ff56acc23c142b07993639be211768.png)
 ### Part 5 - Static and Dynamic Routing
-**1.** Configure OSPF on R1 (LAN-facing interfaces) and all Core and Distribution switches (all Layer-3 interfaces).
-> **a.** Use process ID 1 and Area 0.
-> ![](attachments/38840db17b794539a50f2c20b046341f.png)
-> **b.** Manually configure each device’s RID to match the loopback interface IP.
-> ![](attachments/a846c71541913436197692e78d629633.png)
-> **c.** On switches, use the network command to match the exact IP address of each interface.
-> ![](attachments/de71f8066643a26d1b862661ae27b8e1.png)
-> **d.** On R1, enable OSPF in interface config mode.
-> **e.** Make sure OSPF is enabled on all loopback interfaces, too. Loopback interfaces should be passive.
-> ![](attachments/3cbe33e95d43bc4c159b39aaa10fb7a4.png)
-> **f.** Each Distribution switch’s SVIs (except the Management VLAN SVI) should be passive, too.
-> **g.** Configure all physical connections between OSPF neighbors to use a network type that doesn’t elect a DR/BDR. NOTE: This doesn’t work on the Layer-3 PortChannel interfaces between CSW1/CSW2. Leave them as the default network type.
-> ![](attachments/1dff6fcb20c6c4f595800b3023a748ac.png)
-**2.** Configure one static default route for each of R1’s Internet connections. They should be recursive routes.
-![](attachments/cc296ff2ff1aa633ed1877ebaf30e802.png)
-> **a.** Make the route via G0/1/0 a floating static route by configuring an AD value 1 greater than the default.
-> ![](attachments/8212dfec3459ad464c1b983bc959e6fb.png)
-> **b.** R1 should function as an OSPF ASBR, advertising its default route to other routers in the OSPF domain.
-> ![](attachments/c40da84817a5e8a1f1711a671618a168.png)
+1. Configure OSPF on R1 (LAN-facing interfaces) and all Core and Distribution switches (all Layer-3 interfaces).
+	a. Use process ID 1 and Area 0.
+		![](attachments/38840db17b794539a50f2c20b046341f.png)
+	b. Manually configure each device’s RID to match the loopback interface IP.
+		![](attachments/a846c71541913436197692e78d629633.png)
+	c. On switches, use the network command to match the exact IP address of each interface.
+		![](attachments/de71f8066643a26d1b862661ae27b8e1.png)
+	d. On R1, enable OSPF in interface config mode.
+	e. Make sure OSPF is enabled on all loopback interfaces, too. Loopback interfaces should be passive.
+		![](attachments/3cbe33e95d43bc4c159b39aaa10fb7a4.png)
+	f. Each Distribution switch’s SVIs (except the Management VLAN SVI) should be passive, too.
+	g. Configure all physical connections between OSPF neighbors to use a network type that doesn’t elect a DR/BDR. NOTE: This doesn’t work on the Layer-3 PortChannel interfaces between CSW1/CSW2. Leave them as the default network type.
+		![](attachments/1dff6fcb20c6c4f595800b3023a748ac.png)
+2. Configure one static default route for each of R1’s Internet connections. They should be recursive routes.
+	![](attachments/cc296ff2ff1aa633ed1877ebaf30e802.png)
+	a. Make the route via G0/1/0 a floating static route by configuring an AD value 1 greater than the default.
+		![](attachments/8212dfec3459ad464c1b983bc959e6fb.png)
+	b. R1 should function as an OSPF ASBR, advertising its default route to other routers in the OSPF domain.
+		![](attachments/c40da84817a5e8a1f1711a671618a168.png)
 ### Part 6 - Network Services: DHCP, DNS, NTP, SNMP, Syslog, FTP, SSH, NAT
 **1.** Configure the following DHCP pools on R1 to make it serve as the DHCP server for hosts in Offices A and B. Exclude the first ten usable host addresses of each pool; they must not be leased to DHCP clients.
 > **a.** Pool: A-Mgmt
