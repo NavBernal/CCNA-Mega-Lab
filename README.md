@@ -139,61 +139,61 @@ This lab covers all configuration topics on the CCNA exam.
 	![](attachments/518bcc9dad5c15df54ba2835eef65684.png)
 11. Configure the following management IP addresses on the Access switches (interface VLAN 99), and configure the appropriate subnet’s first usable address as the default gateway.
 	![](attachments/92f59f67c265dbe24df932db91169aea.png)
-	a. ASW-A1: 10.0.0.4/28
+	- ASW-A1: 10.0.0.4/28
 	![](attachments/45c38414ef954dcc9959558512664b4b.png)
-	b. ASW-A2: 10.0.0.5/28
-	c. ASW-A3: 10.0.0.6/28
-	d. ASW-B1: 10.0.0.20/28
-	e. ASW-B2: 10.0.0.21/28
-	f. ASW-B3: 10.0.0.22/28
+	- ASW-A2: 10.0.0.5/28
+	- ASW-A3: 10.0.0.6/28
+	- ASW-B1: 10.0.0.20/28
+	- ASW-B2: 10.0.0.21/28
+	- ASW-B3: 10.0.0.22/28
 12. Configure HSRPv2 group 1 for Office A’s Management subnet (VLAN 99). Make DSW-A1 the Active router by increasing its priority to 5 above the default, and enable preemption on DSW-A1.
 	![](attachments/f7f9f40619d616523931eb186c9f9007.png)
-	a. Subnet: 10.0.0.0/28
-	b. VIP: 10.0.0.1
-	c. DSW-A1: 10.0.0.2
+	- Subnet: 10.0.0.0/28
+	- VIP: 10.0.0.1
+	- DSW-A1: 10.0.0.2
 	![](attachments/8eef21430b42920dcf9cbad2fb5f3ca8.png)
-	d. DSW-A2: 10.0.0.3
+	- DSW-A2: 10.0.0.3
 	![](attachments/f56689af540f878d4b7f44d4cfd739af.png)
 	![](attachments/d2ce1e4c075051baf8c67ba64bb2bcdc.png)
 13. Configure HSRPv2 group 2 for Office A’s PCs subnet (VLAN 10). Make DSW-A1 the Active router by increasing its priority to 5 above the default, and enable preemption on DSW-A1.
-	a. Subnet: 10.1.0.0/24
-	b. VIP: 10.1.0.1
-	c. DSW-A1: 10.1.0.2
-	d. DSW-A2: 10.1.0.3
+	- Subnet: 10.1.0.0/24
+	- VIP: 10.1.0.1
+	- DSW-A1: 10.1.0.2
+	- DSW-A2: 10.1.0.3
 	![](attachments/76c4e7bb09e5a8020d64c9d63e947823.png)
 14. Configure HSRPv2 group 3 for Office A’s Phones subnet (VLAN 20). Make DSW-A2 the Active router by increasing its priority to 5 above the default, and enable preemption on DSW-A2.
-	a. Subnet: 10.2.0.0/24
-	b. VIP: 10.2.0.1
-	c. DSW-A1: 10.2.0.2
-	d. DSW-A2: 10.2.0.3
+	- Subnet: 10.2.0.0/24
+	- VIP: 10.2.0.1
+	- DSW-A1: 10.2.0.2
+	- DSW-A2: 10.2.0.3
 	![](attachments/d7da299e5f784fac3603a356b748641c.png)
 15. Configure HSRPv2 group 4 for Office A’s Wi-Fi subnet (VLAN 40). Make DSW-A2 the Active router by increasing its priority to 5 above the default, and enable preemption on DSW-A2.
-	a. Subnet: 10.6.0.0/24
-	b. VIP: 10.6.0.1
-	c. DSW-A1: 10.6.0.2
-	d. DSW-A2: 10.6.0.3
+	- Subnet: 10.6.0.0/24
+	- VIP: 10.6.0.1
+	- DSW-A1: 10.6.0.2
+	- DSW-A2: 10.6.0.3
 	![](attachments/4503438ff647a302384f7283fbb6b103.png)
 	![](attachments/df4d0d5d166ac9871eea6edebacf0cd9.png)
 16. Configure HSRPv2 group 1 for Office B’s Management subnet (VLAN 99). Make DSW-B1 the Active router by increasing its priority to 5 above the default, and enable preemption on DSW-B1.
-	a. Subnet: 10.0.0.16/28
-	b. VIP: 10.0.0.17
-	c. DSW-B1: 10.0.0.18
-	d. DSW-B2: 10.0.0.19
+	- Subnet: 10.0.0.16/28
+	- VIP: 10.0.0.17
+	- DSW-B1: 10.0.0.18
+	- DSW-B2: 10.0.0.19
 17. Configure HSRPv2 group 2 for Office B’s PCs subnet (VLAN 10). Make DSW-B1 the Active router by increasing its priority to 5 above the default, and enable preemption on DSW-B1.
-	a. Subnet: 10.3.0.0/24
-	b. VIP: 10.3.0.1
-	c. DSW-B1: 10.3.0.2
-	d. DSW-B2: 10.3.0.3
+	- Subnet: 10.3.0.0/24
+	- VIP: 10.3.0.1
+	- DSW-B1: 10.3.0.2
+	- DSW-B2: 10.3.0.3
 18. Configure HSRPv2 group 3 for Office B’s Phones subnet (VLAN 20). Make DSW-B2 the Active router by increasing its priority to 5 above the default, and enable preemption on DSW-B2.
-	a. Subnet: 10.4.0.0/24
-	b. VIP: 10.4.0.1
-	c. DSW-B1: 10.4.0.2
-	d. DSW-B2: 10.4.0.3
+	- Subnet: 10.4.0.0/24
+	- VIP: 10.4.0.1
+	- DSW-B1: 10.4.0.2
+	- DSW-B2: 10.4.0.3
 19. Configure HSRPv2 group 4 for Office B’s Servers subnet (VLAN 30). Make DSW-B2 the Active router by increasing its priority to 5 above the default, and enable preemption on DSW-B2.
-	a. Subnet: 10.5.0.0/24
-	b. VIP: 10.5.0.1
-	c. DSW-B1: 10.5.0.2
-	d. DSW-B2: 10.5.0.3
+	- Subnet: 10.5.0.0/24
+	- VIP: 10.5.0.1
+	- DSW-B1: 10.5.0.2
+	- DSW-B2: 10.5.0.3
 ### Part 4 - Rapid Spanning Tree Protocol
 1. Configure Rapid PVST+ on all Access and Distribution switches.
 	![](attachments/0e9702e09e82b735f39c518ca165bc0f.png)
