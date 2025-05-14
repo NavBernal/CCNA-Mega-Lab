@@ -1,4 +1,4 @@
-This lab covers all configuration topics on the CCNA exam.
+This lab covers all configuration topics on the CCNA exam including, but not limited to, VLANs, EtherChannel, HSRP, RSTP, static/dynamic routing protocols, etc.
 ### Topology
 ![](attachments/2f5e91993cfbf4da38c82fcfa9403705.png)
 ### Part 1 - Initial setup
