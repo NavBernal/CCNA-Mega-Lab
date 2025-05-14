@@ -1,10 +1,11 @@
-This lab covers all configuration topics on the CCNA exam including, but not limited to, VLANs, EtherChannel, HSRP, RSTP, static/dynamic routing protocols, etc.
+This lab covers all configuration topics on the CCNA exam including, but not limited to, VLANs, EtherChannel, HSRP, RSTP, static/dynamic routing protocols, etc..
 ### Topology
 ![](attachments/2f5e91993cfbf4da38c82fcfa9403705.png)
 ### Part 1 - Initial setup
 1. Configure the appropriate hostname on each router/switch.
 	![](attachments/6c5851e633ad0f39059b489b7639a9da.png)
 2. Configure the enable secret `jeremysitlab` on each router/switch. Use type 9 hashing if available; otherwise, use type 5.
+
 	![](attachments/70b33d4b3908cf103df7520569c3fd9f.png)
 	- Packet tracer does not seem to offer type 9 hashing, only type 5 (MD5)
 3. Configure the user account `cisco` with secret `ccna` on each router/switch. Use type 9 hashing if available; otherwise, use type 5.
